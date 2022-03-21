@@ -1,0 +1,24 @@
+{
+  "name": "demo-trello-api",
+  "version": "1.0.0",
+  "description": "APIs for trello clone app",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngoalong98/demo-trello-api.git"
+  },
+  "keywords": [],
+  "author": "ngoalong98",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ngoalong98/demo-trello-api/issues"
+  },
+  "homepage": "https://github.com/ngoalong98/demo-trello-api#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
