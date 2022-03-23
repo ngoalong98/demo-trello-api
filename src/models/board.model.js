@@ -10,8 +10,8 @@ const boardCollectionSchema = Joi.object({
     _destroy: Joi.boolean().default(false)
 })
 
-const validateSchema = async(data) => {
-    return  await boardCollectionSchema.validateAsync(data, { abortEarly: false });
+const validateSchema = (data) => {
+    return boardCollectionSchema.validateAsync(data, { abortEarly: false });
 }
 
 const createNew = async (data) => {
@@ -21,7 +21,7 @@ const createNew = async (data) => {
         const result = await getDB().collection(boardCollectionName).insertOne(value);
         return result.ops[0];
     } catch (error) { 
-        console.log(error);
+        throw new Error(error)
     }
 }
 
